@@ -1,0 +1,35 @@
+@use "./_variable" as var;
+
+body {
+  background-color: var.$bgColorWhite;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  font-size: var.$fontNormal;
+  color: var.$textColor;
+  font-family: var.$fontFamily;
+  line-height: var.$lineHeight;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.todo-app{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 760px;
+}
+
+.v-task-form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 10px;
+    .v-task-input{
+        flex: 1 1 auto;
+    }
+    .v-task-button{
+        flex: 0 0 auto;
+    }
+}

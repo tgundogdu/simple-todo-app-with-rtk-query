@@ -1,0 +1,24 @@
+@use "../../assets/styles/variable" as var;
+
+.v-task-row{
+    border: solid 1px var.$borderColor;
+    padding: 10px;
+    display: flex;
+    border-bottom: 0;
+    gap: 10px;
+    .v-col{
+        flex: 1 1 auto;
+        &:first-child{
+            flex: 0 0 auto;
+        }
+        &:last-child{
+            flex: 0 0 auto;
+        }
+        &.completed{
+            text-decoration: line-through;
+        }
+    }
+    &:last-child{
+        border-bottom: solid 1px var.$borderColor;
+    }
+}
