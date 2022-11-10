@@ -13,14 +13,24 @@ const Main = () => {
 
   const addTaskHandler = (e) => {
     e.preventDefault();
-    if (newTask.trim().length > 0) {
-      addTask({ title: newTask, completed: false });
-      setNewTask("");
-    } else {
+    if (newTask.trim().length <= 0) {
       setInputValidation({
         error: true,
         errorMessage: "Task cannot be empty.",
       });
+    } else if (!/^.{1,50}$/.test(newTask)) {
+      setInputValidation({
+        error: true,
+        errorMessage: "Task shuld be max 50 charachter.",
+      });
+    } else if (!/^[a-zA-Z0-9 ]+$/.test(newTask)) {
+      setInputValidation({
+        error: true,
+        errorMessage: "Only alphanumeric characters acceptable",
+      });
+    } else {
+      addTask({ title: newTask, completed: false });
+      setNewTask("");
     }
   };
 

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start:server": "json-server -p 3003 --watch db.json"
+    "start": "json-server -p 3003 --watch db.json"
   },
   "author": "",
   "license": "ISC"

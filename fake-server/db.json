@@ -17,28 +17,28 @@
     },
     {
       "title": "deneme",
-      "completed": false,
+      "completed": true,
       "id": 23
     },
     {
       "title": "sresf refr ref e",
-      "completed": true,
+      "completed": false,
       "id": 28
     },
     {
       "title": "dfsdfsd",
-      "completed": false,
+      "completed": true,
       "id": 29
-    },
-    {
-      "title": "greferewrw",
-      "completed": false,
-      "id": 30
     },
     {
       "title": "dgfgdf",
       "completed": false,
       "id": 31
+    },
+    {
+      "title": "lorem ipsum",
+      "completed": true,
+      "id": 32
     }
   ]
 }

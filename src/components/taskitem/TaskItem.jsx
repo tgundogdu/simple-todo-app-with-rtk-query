@@ -1,11 +1,11 @@
-import { Button } from "../";
+import { Button, CheckBox } from "../";
 import "./taskitem.scss";
 
 const TaskItem = ({ data, onUpdate, onDelete }) => {
   return (
     <div className="v-task-row">
       <div className="v-col">
-        <input type="checkbox" checked={data.completed} onChange={onUpdate} />
+        <CheckBox status={data.completed} onChange={onUpdate}/>
       </div>
       <div className={`v-col ${data.completed ? "completed" : ""}`}>
         {data.title}
